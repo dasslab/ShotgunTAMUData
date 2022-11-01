@@ -1,0 +1,27 @@
+/media/gtlab/b8e6f206-57aa-4244-aa45-52819c7633ca/Project/shotgun/ARGs/card-data/nucleotide_fasta_protein_homolog_model.fasta
+
+
+/home/vicky/My_Stuff/TAMU/Shotgun/CARD/nucleotide_fasta_protein_homolog_model.fasta
+
+
+
+blastn -query plantA.contigs.l1000.fasta -db /home/vicky/My_Stuff/TAMU/Shotgun/CARD/nucleotide_fasta_protein_homolog_model.fasta -out plantA.ARGs.txt -outfmt 6 
+
+
+blastn -query plantB.contigs.l1000.fasta -db /home/vicky/My_Stuff/TAMU/Shotgun/CARD/nucleotide_fasta_protein_homolog_model.fasta -out plantB.ARGs.txt -outfmt 6 
+
+
+blastn -query plantC.contigs.l1000.fasta -db /home/vicky/My_Stuff/TAMU/Shotgun/CARD/nucleotide_fasta_protein_homolog_model.fasta -out plantC.ARGs.txt -outfmt 6 
+
+
+
+blastn -query plantI.contigs.l1000.fasta -db /home/vicky/My_Stuff/TAMU/Shotgun/CARD/nucleotide_fasta_protein_homolog_model.fasta -out plantI.ARGs.txt -outfmt 6 
+
+blastn -query plantJ.contigs.l1000.fasta -db /home/vicky/My_Stuff/TAMU/Shotgun/CARD/nucleotide_fasta_protein_homolog_model.fasta -out plantJ.ARGs.txt -outfmt 6
+
+
+
+blastp -query contigs.l500.proteins.fasta -db /home/vicky/My_Stuff/TAMU/Shotgun/CARD/protein_fasta_protein_homolog_model.fasta -out plantA.ARGs.txt -outfmt 6
+
+
+deeparg download-data --help
