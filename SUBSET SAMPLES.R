@@ -1,3 +1,6 @@
+#R Script used to subset samples
+#Input from the Phyloseq Main Code File
+
 #Subset Samples
 
 year17 <- subset_samples(ww1, Year=="Year_2017-18")
