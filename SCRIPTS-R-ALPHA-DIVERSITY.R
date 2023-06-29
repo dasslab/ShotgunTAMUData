@@ -9,7 +9,7 @@ allGroupsColors<- c(
   "grey0", "red", "darkorchid",
   "deeppink", "gold4")
 
-png("Alpha Diversity - Plants.png",
+png("Alpha Diversity.png",
     width = 18*300,
     height = 18*300,
     res = 600,
