@@ -1,5 +1,5 @@
-ww1 = subset_samples(ww1, samplenames
-
+#R Script used to perform Beta Diversity analysis
+#Input from the Phyloseq Main Code file
 
 #PCA
 ww.ord <- ordinate(ww1, "PCoA", "unifrac")
@@ -116,8 +116,5 @@ ordplot +
 dev.off()
 
 
-#PERMANOVA
-bray_dist = phyloseq::distance(ww1, method="unifrac")
-res <- adonis2(bray_dist ~ sample_data(ww1)$Year)
 
 
