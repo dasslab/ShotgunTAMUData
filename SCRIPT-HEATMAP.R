@@ -1,11 +1,16 @@
-data <- read.csv("heatmap_cog.csv", check.names = FALSE)
+#R Script used to generate Heatmaps
+#Input 
+data <- read.csv("input.csv", check.names = FALSE)
 rnames <- data[,1]
-mat_data <- data.matrix(data[,2:4])
+mat_data <- data.matrix(data[,2:n])
 rownames(mat_data) <- rnames
 
+#Color Profile
 my_palette <- colorRampPalette(c("steelblue4", "lightgoldenrod1", "red3"))(n = 299)
+
+#HEATMAP
 # creates a 5 x 5 inch image
-png("Heatmap_COG.png",    # create PNG for the heat map
+png("Image-title.png",    # create PNG for the heat map
     width = 10*300,        # 5 x 300 pixels
     height = 10*300,
     res = 300,            # 300 pixels per inch
@@ -27,7 +32,7 @@ pheatmap(mat_data,
          lwid = c(2,2),
          cellwidth = 30,
          cellheight = 15,
-         main = "Abundance of Genes in various COG Functional Categories",
+         main = "Title",
          colsep=1:ncol(mat_data),
          display_numbers = FALSE,
          number_format = "%.3f",
