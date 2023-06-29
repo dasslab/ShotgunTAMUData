@@ -1,3 +1,5 @@
+#Inputs from the Phyloseq Main Code file
+
 #PERMANOVA
 bray_dist = phyloseq::distance(ww1, method="unifrac")
 res_ado <- adonis(bray_dist ~ sample_data(ww1)$Plant)
