@@ -1,3 +1,4 @@
+#R Script used to perform PERMANOVA analysis
 #Inputs from the Phyloseq Main Code file
 
 #PERMANOVA
